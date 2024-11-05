@@ -3,7 +3,7 @@ package br.com.fiap.twoespwx.libunclepresser;
 import java.io.IOException;
 
 public class App {
-    // Método principal que orquestra a execução do programa
+    // Método principal 
     public static void main(String[] args) {
         // Verifica se os argumentos de linha de comando foram passados corretamente
         if (args.length != 2) {
@@ -28,7 +28,7 @@ public class App {
             // Gera o relatório com as estatísticas de compressão
             ReportGenerator.generateReport(inputFilePath, outputFilePath, inputData.length(), compressedData.length(), inputData);
         } catch (IOException e) {
-            // Caso ocorra algum erro durante a leitura, compressão ou gravação, imprime o erro
+            // Caso ocorra algum erro durante a leitura
             e.printStackTrace();
         }
     }

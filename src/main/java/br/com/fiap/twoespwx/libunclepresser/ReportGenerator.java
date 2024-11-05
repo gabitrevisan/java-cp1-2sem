@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 public class ReportGenerator {
-    // Método que gera e imprime o relatório com estatísticas da compressão
+    // Esse método gera e imprime o relatório com estatísticas da compressão
     public static void generateReport(String inputFilePath, String outputFilePath, int inputSize, int outputSize, String originalData) throws IOException {
         // Cria um mapa para armazenar as frequências dos caracteres na sequência de nucleotídeos
         HashMap<Character, Integer> frequencies = new HashMap<>();

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppTest {
-    // Testa o método de compressão RLE com um exemplo simples
+    // Esse métod testa o método de compressão RLE com um exemplo simples
     @Test
     public void testRLECompression() {
         String input = "AAAACCCTTG";   // Entrada de teste
@@ -25,7 +25,7 @@ public class AppTest {
     // Testa o método de compressão RLE com uma sequência de caracteres repetidos
     @Test
     public void testRLECompressionWithSingleChar() {
-        String input = "GGGGGGGGGG";  // Entrada de teste com um único caractere repetido
+        String input = "GGGGGGGGGG";  // Entrada de teste com um único caractere repetido 10 vezes
         String expected = "G10";       // Resultado esperado: "G" aparece 10 vezes
         String actual = RLECompressor.compress(input);  // Comprime a entrada
         assertEquals(expected, actual);  // Verifica se o resultado está correto

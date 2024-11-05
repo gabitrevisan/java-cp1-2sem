@@ -3,12 +3,12 @@ package br.com.fiap.twoespwx.libunclepresser;
 public class RLECompressor {
     // Método que aplica a compressão RLE na sequência de dados
     public static String compress(String data) {
-        StringBuilder compressed = new StringBuilder(); // Usamos StringBuilder para construir a string comprimida
+        StringBuilder compressed = new StringBuilder(); // Utlizamos StringBuilder para construir a string comprimida
         int count = 1; // Contador de repetições de caracteres
 
         // Itera pela sequência de dados (exceto o primeiro caractere)
         for (int i = 1; i < data.length(); i++) {
-            // Se o caractere atual é igual ao anterior, incrementa o contador
+            // Se o caractere atual é igual ao anterior, aumenta o contador
             if (data.charAt(i) == data.charAt(i - 1)) {
                 count++;
             } else {
